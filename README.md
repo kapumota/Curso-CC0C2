@@ -62,5 +62,4 @@ Recursos adicionales: Documentación de HuggingFace, artículos de ACL/EMNLP.
 - Semana 17: Examen final (20 de diciembre) y examen sustitutorio (27 de diciembre).
 - Feriados: 30 de agosto y 1 de noviembre (sin clases).
 
-Contacto
-Para más información, contactar al Departamento Académico de Ciencia de la Computación, Facultad de Ciencias, Universidad Nacional de Ingeniería.
+
