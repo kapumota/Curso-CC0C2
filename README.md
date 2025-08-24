@@ -2,7 +2,9 @@
 
 #### Descripción del curso
 
-El curso Procesamiento de Lenguaje Natural (NLP) es un curso electivo de 4 créditos que explora los fundamentos y aplicaciones avanzadas de NLP y Modelos de Lenguaje de Gran Escala (LLMs). A través de una combinación de teoría (2 horas semanales) y práctica (4 horas semanales), los estudiantes desarrollarán habilidades para diseñar, implementar y optimizar sistemas de IA basados en NLP, utilizando herramientas modernas como HuggingFace, PyTorch y LangChain. El curso culmina en un proyecto final donde los estudiantes crean un prototipo de IA inspirado en una idea de startup.
+El curso Procesamiento de Lenguaje Natural (NLP) es un curso electivo de 4 créditos que explora los fundamentos y aplicaciones avanzadas de NLP y Modelos de Lenguaje de Gran Escala (LLMs). A través de una combinación de teoría (2 horas semanales) y práctica (4 horas semanales), los estudiantes desarrollarán habilidades para diseñar, implementar y optimizar sistemas de IA basados en NLP, utilizando herramientas modernas como HuggingFace, PyTorch y LangChain. 
+
+El curso culmina en un proyecto final donde los estudiantes crean un prototipo de IA inspirado en una idea de startup.
 
 #### Objetivos
 
@@ -15,10 +17,10 @@ El curso Procesamiento de Lenguaje Natural (NLP) es un curso electivo de 4 créd
 El curso se divide en 5 unidades impartidas a lo largo de 17 semanas (25 de agosto - 20 de diciembre de 2025):
 
 - Fundamentos de NLP e Ingeniería de IA (Semanas 1-4): Introducción a NLP, LLMs, tokenización, n-gramas y herramientas como HuggingFace.
-- Técnicas Centrales de NLP y Arquitecturas de Modelos (Semanas 5-8): Representaciones vectoriales, RNNs, Transformers y preparación para el examen parcial.
-- Arquitecturas Avanzadas de LLMs y Evaluación (Semanas 9-12): Transformers, BERT, ajuste fino (LoRA), métricas de evaluación y optimización.
-- Aplicaciones Prácticas de LLMs (Semanas 13-16): RAG, agentes de IA, ingeniería de prompts y curación de datos.
-- Proyecto Final y Síntesis (Semanas 16-17): RLHF, DPO, optimización de inferencia y presentación de proyectos finales.
+- Técnicas centrales de NLP y Arquitecturas de Modelos (Semanas 5-8): Representaciones vectoriales, RNNs, Transformers y preparación para el examen parcial.
+- Arquitecturas avanzadas de LLMs y Evaluación (Semanas 9-12): Transformers, BERT, ajuste fino (LoRA), métricas de evaluación y optimización.
+- Aplicaciones prácticas de LLMs (Semanas 13-16): RAG, agentes de IA, ingeniería de prompts y curación de datos.
+- Proyecto final y síntesis (Semanas 16-17): RLHF, DPO, optimización de inferencia y presentación de proyectos finales.
 
 #### Metodología
 
