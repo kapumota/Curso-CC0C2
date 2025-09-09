@@ -34,6 +34,22 @@ Combina oraciones sintéticas (basadas en plantillas) y ejemplos reales inspirad
 
 **Dataset**: Usa `nlp_prueba_cc0c2_large.csv` (~10,000 oraciones) generado con el script proporcionado. Descarga desde el enlace del repositorio o genera localmente.
 
+**Ejemplo de `nlp_prueba_cc0c2_large.csv`**
+```
+Texto,Categoría
+La tokenización es clave para procesar texto,Positivo
+No entiendo los embeddings vectoriales,Negativo
+Los LLMs son impresionantes pero complejos,Neutral
+El curso de NLP es fascinante y útil,Positivo
+La programación en Python es complicada al principio,Negativo
+Entender los embeddings resulta útil en el curso de NLP,Positivo
+No entiendo cómo funciona la regularización, es confuso,Negativo
+La lematización parece interesante pero fundamental,Neutral
+Implementar modelos de lenguaje es innovador en proyectos reales,Positivo
+Los transformers son complicados y limitados para datasets pequeños,Negativo
+```
+
+
 ### **Proyectos**
 
 #### **Proyecto 1: Clasificación Zero-Shot con Guardrails**
