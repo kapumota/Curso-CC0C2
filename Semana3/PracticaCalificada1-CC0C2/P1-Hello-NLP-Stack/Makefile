@@ -1,4 +1,4 @@
-# Makefile (datos + pipeline) — comments in English
+# Makefile (datos + pipeline)
 PY ?= python3
 RAW ?= data/raw
 PROC ?= data/processed
