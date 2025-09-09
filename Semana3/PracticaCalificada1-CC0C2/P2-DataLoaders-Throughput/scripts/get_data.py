@@ -1,4 +1,4 @@
-# get_data.py — cargador mínimo de datasets de Hugging Face a CSV (comentarios en español)
+# get_data.py - cargador mínimo de datasets de Hugging Face a CSV
 import argparse
 from datasets import load_dataset
 import pandas as pd
