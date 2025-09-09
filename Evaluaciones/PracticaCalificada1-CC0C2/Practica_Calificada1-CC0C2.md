@@ -57,8 +57,8 @@ Los transformers son complicados y limitados para datasets pequeños,Negativo
 **Implementación (3 puntos)**: Usa HuggingFace `pipeline` (e.g., `zero-shot-classification`) para clasificar 500 oraciones de `nlp_prueba_cc0c2_large.csv` en 'Positivo', 'Negativo', 'Neutral'. Prueba 2 prompts distintos (e.g., "Clasifica el sentimiento" vs. "Evalúa la emoción"). Implementa un guardrail (regex para nombres propios). Calcula accuracy y matriz de confusión.  
 **Teoría (escrita)**:
 1. Define modelo fundacional y pretraining.
-2. Explica in-context learning en zero-shot.
-3. Describe riesgos de prompt injection.
+2. Explica **in-context learning** en zero-shot.
+3. Describe riesgos de **prompt injection**.
 4. Impacto de tokens en costo computacional.
 5. Analiza un fallo de clasificación y solución.  
 **Métricas**: Accuracy, matriz de confusión, 5 ejemplos de errores.   
@@ -104,7 +104,7 @@ Los transformers son complicados y limitados para datasets pequeños,Negativo
 1. Stemming vs. lematización.
 2. Impacto de segmentación en OOV.
 3. Riesgos de normalización agresiva.
-4. Estrategias para code-switching.
+4. Estrategias para **code-switching**.
 5. Caso donde normalización degrade un modelo.  
 **Métricas**: Tamaño de vocabulario, OOV, ejemplos cualitativos.    
 **Entregables**:
@@ -135,7 +135,7 @@ Los transformers son complicados y limitados para datasets pequeños,Negativo
 2. F1 vs. ROC-AUC: ¿cuándo usar cada uno?
 3. Estrategias para class imbalance.
 4. Beneficios de regularización L2.
-5. Métricas de fairness en este modelo.  
+5. Métricas de **fairness** en este modelo.  
 **Métricas**: F1 macro, ROC-AUC, matriz de confusión.  
 **Entregables**:
     - **Notebook**: Código, métricas, teoría. Commit: "Clasificación con L2 PC1".
