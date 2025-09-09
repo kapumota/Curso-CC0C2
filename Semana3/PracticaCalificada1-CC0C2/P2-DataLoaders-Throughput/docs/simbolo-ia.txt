@@ -1,5 +1,0 @@
-Instrucciones para el símbolo creado por IA:
-- Genera un ícono/badge simple (PNG o SVG) que represente tu proyecto.
-- Indica la herramienta usada (p. ej., DALL·E, StableDiffusion, Canva) y el prompt exacto.
-- Guarda como docs/simbolo-ia.png (o .svg) y pega aquí el prompt:
-Prompt:
