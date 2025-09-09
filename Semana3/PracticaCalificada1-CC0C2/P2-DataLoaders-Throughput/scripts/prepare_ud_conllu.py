@@ -1,4 +1,4 @@
-# prepare_ud_conllu.py — convierte archivos CoNLL-U a CSV a nivel de token (comentarios en español)
+# prepare_ud_conllu.py -convierte archivos CoNLL-U a CSV a nivel de token (comentarios en español)
 import argparse
 import pandas as pd
 from conllu import parse_incr
@@ -30,6 +30,6 @@ def main():
                     "misc": tok.get("misc"),
                 })
     pd.DataFrame(filas).to_csv(args.out, index=False)
-    print(f"[OK] Escribí {len(filas):,} filas de tokens → {args.out}")
+    print(f"[OK] Escribí {len(filas):,} filas de tokens -> {args.out}")
 if __name__ == "__main__":
     main()
