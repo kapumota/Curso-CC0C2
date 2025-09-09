@@ -1,4 +1,4 @@
-# checksums.py — manifiesto SHA256 (comentarios en español)
+# checksums.py - manifiesto SHA256 
 import argparse, hashlib, os
 def sha256_de(path, chunk=1<<20):
     h = hashlib.sha256()
@@ -24,6 +24,6 @@ def main():
     with open(args.out, "w", encoding="utf-8") as f:
         for p, h in registros:
             f.write(f"{h}  {p}\n")
-    print(f"[OK] {len(registros)} archivos hasheados → {args.out}")
+    print(f"[OK] {len(registros)} archivos hasheados -> {args.out}")
 if __name__ == "__main__":
     main()
