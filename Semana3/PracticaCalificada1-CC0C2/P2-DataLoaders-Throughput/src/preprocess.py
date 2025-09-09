@@ -1,4 +1,4 @@
-# preprocess.py — limpieza y featurización (comentarios en español)
+# preprocess.py -limpieza y featurización
 import argparse, os, glob
 import pandas as pd
 def main():
@@ -13,6 +13,6 @@ def main():
     df = pd.read_csv(archivos[0]).dropna().reset_index(drop=True)
     out_path = os.path.join(args.outdir, "clean.csv")
     df.to_csv(out_path, index=False)
-    print(f"[OK] CSV limpio → {out_path} (filas={len(df)})")
+    print(f"[OK] CSV limpio -> {out_path} (filas={len(df)})")
 if __name__ == "__main__":
     main()
