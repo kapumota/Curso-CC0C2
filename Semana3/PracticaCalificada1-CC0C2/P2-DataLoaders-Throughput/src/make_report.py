@@ -1,4 +1,4 @@
-# make_report.py — genera reporte Markdown mínimo (comentarios en español)
+# make_report.py -genera reporte Markdown mínimo (comentarios en español)
 import argparse, os, json, datetime
 TEMPLATE = """# Reporte de resultados
 
