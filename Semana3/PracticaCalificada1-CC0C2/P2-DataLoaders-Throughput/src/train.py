@@ -1,4 +1,4 @@
-# train.py — entrenamiento baseline (comentarios en español)
+# train.py - entrenamiento baseline (comentarios en español)
 import argparse, os, json, joblib
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -24,6 +24,6 @@ def main():
     joblib.dump(pipe, os.path.join(args.out, "model.joblib"))
     with open(os.path.join(args.out, "train_meta.json"), "w") as f:
         json.dump({"filas": int(len(df))}, f)
-    print("[OK] Modelo baseline entrenado → out/model.joblib")
+    print("[OK] Modelo baseline entrenado -> out/model.joblib")
 if __name__ == "__main__":
     main()
