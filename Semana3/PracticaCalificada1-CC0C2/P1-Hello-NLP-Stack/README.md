@@ -46,7 +46,7 @@ make report
 make checks
 ```
 
- #### entrega
+ #### Entrega
 
 - `make data` ejecutado, CSV presentes en `data/raw/`.
 - `make checks && make verify-data` y subida de `evidencias/data_sha256.txt`.
