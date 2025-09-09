@@ -1,5 +1,5 @@
-# Exposición (Plantilla)
-- Objetivo y user story
+#### Exposición (Plantilla)
+- Objetivo y historia de usuarios
 - Backlog y plan de 3 hitos (fechas)
 - Arquitectura / Pipeline
 - Demo (capturas)
