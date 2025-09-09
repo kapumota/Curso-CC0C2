@@ -1,4 +1,4 @@
-# eval.py — evaluación y figuras (comentarios en español)
+# eval.py - evaluación y figuras 
 import argparse, os, json
 import pandas as pd
 import matplotlib.pyplot as plt
