@@ -1,22 +1,24 @@
-# prepare_ud_conllu.py — converts CoNLL-U to token-level CSV (comments in English)
-import argparse
-import pandas as pd
-from conllu import parse_incr
+# prepare_ud_conllu.py - convierte archivos CoNLL-U a CSV a nivel de tokens
+
+import argparse  # Módulo para argumentos desde la línea de comandos
+import pandas as pd  # Librería para manipulación tabular
+from conllu import parse_incr  # Función para parsear archivos CoNLL-U incrementalmente
 
 def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--input", required=True, help="Path to .conllu file")
-    ap.add_argument("--out", required=True, help="Output CSV path")
+    ap = argparse.ArgumentParser()  # Inicializa el parser de argumentos
+    ap.add_argument("--input", required=True, help="Ruta al archivo .conllu de entrada")
+    ap.add_argument("--out", required=True, help="Ruta del archivo CSV de salida")
     args = ap.parse_args()
 
-    rows = []
+    rows = []  # Lista que almacenará los datos de cada token
     with open(args.input, "r", encoding="utf-8") as f:
-        for sent in parse_incr(f):
-            sent_id = sent.metadata.get("sent_id", "")
-            sent_text = sent.metadata.get("text", "")
+        for sent in parse_incr(f):  # Itera sobre cada oración del archivo CoNLL-U
+            sent_id = sent.metadata.get("sent_id", "")  # Obtiene el ID de la oración (si está disponible)
+            sent_text = sent.metadata.get("text", "")   # Obtiene el texto original de la oración
             for tok in sent:
-                if isinstance(tok["id"], tuple):  # skip multi-word tokens
+                if isinstance(tok["id"], tuple):  # Omite tokens de múltiples palabras
                     continue
+                # Extrae la información del token y la agrega a la lista
                 rows.append({
                     "sent_id": sent_id,
                     "text": sent_text,
@@ -31,8 +33,8 @@ def main():
                     "deps": tok.get("deps"),
                     "misc": tok.get("misc"),
                 })
-    pd.DataFrame(rows).to_csv(args.out, index=False)
-    print(f"[OK] Wrote {len(rows):,} tokens → {args.out}")
+    pd.DataFrame(rows).to_csv(args.out, index=False)  # Convierte a DataFrame y guarda como CSV
+    print(f"[OK] Escribe {len(rows):,} tokens -> {args.out}")  # Imprime confirmación con cantidad de tokens procesados
 
 if __name__ == "__main__":
-    main()
+    main() 
