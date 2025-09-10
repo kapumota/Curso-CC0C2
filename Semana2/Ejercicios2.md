@@ -181,40 +181,6 @@ y el uso de modelos HF (generación/prompting), con una progresión de ejercicio
 **Entrega:** salida de `pytest -q` y 1-2 tests mostrados.
 
 
-#### Ejercicio 23 - Script CLI de muestreo de lotes
-**Objetivo:** exponer el *pipeline* como herramienta.  
-**Tareas:** con `argparse`, crea `sample_loader.py` que imprime `N` ejemplos *tokenizados* y un lote.  
-**Entrega:** uso (`python sample_loader.py --n 3 --batch-size 4`) y salida.
-
-
-#### Ejercicio 24 - *Feature flag* de tokenización (spaCy vs básica vs HF)
-**Objetivo:** alternar modos sin tocar lógica central.  
-**Tareas:** agrega una bandera de entorno o argumento CLI para escoger tokenizador.  
-**Entrega:** evidencias de los 3 modos y diferencias de *tokens*.
-
-
-#### Ejercicio 25 - Truncado seguro + histograma de longitudes
-**Objetivo:** evitar OOM y entender distribución.  
-**Tareas:** define `max_len` y trunca. Genera un histograma (binning) de longitudes *antes/después*.  
-**Entrega:** histograma textual y reflexión (2-3 líneas).
-
-
-#### Ejercicio 26 - `collate_fn` (diccionarios tipados)
-**Objetivo:** preparar datos estilo producción.  
-**Tareas:** devuelve `{"src": ..., "tgt": ..., "src_mask": ..., "tgt_mask": ...}` y anota *type hints*.  
-**Entrega:** `print(batch.keys())` y *shapes*.
-
-
-#### Ejercicio 27 - Reproducibilidad total
-**Objetivo:** fijar semillas y versiones.  
-**Tareas:** `random.seed`, `np.random.seed`, `torch.manual_seed`, control de *workers* deterministas y listado de versiones (`pip freeze | grep -E 'torch|torchtext|spacy|transformers'`).  
-**Entrega:** bloque `SEEDS` y lista de versiones (4-6 líneas).
-
-#### Ejercicio 28 - Métrica de cobertura de vocabulario (OOV rate)
-**Objetivo:** medir cuántos tokens quedan fuera de vocab.  
-**Tareas:** calcula `%OOV` por *split*. Analiza impacto de `min_freq`.  
-**Entrega:** tabla (split, min_freq, %OOV) y comentario (2-3 líneas).
-
 #### Pistas generales (no soluciones)
 - Mantén alineado *tokenizer <-> modelo*.  
 - Revisa `padding_value` vs `PAD_IDX`.  
