@@ -26,7 +26,9 @@ La Ingeniería de IA se diferencia de la Ingeniería de ML tradicional porque op
 
 ### 5. Modelos fundacionales en contexto
 
-Un FM sólido descansa en tres pilares. **Datos**, **arquitectura** y **posentrenamiento**.
+Un FM sólido descansa en tres pilares.
+
+**Datos**, **arquitectura** y **posentrenamiento**.
 
 En **datos** se parte de corpora masivos y diversos con deduplicación a gran escala, filtrado de calidad y control de licencias. Se combina evaluación automática con auditorías humanas acotadas. En entornos multilingües se cuida la proporción por idioma y se aplican cuotas que evitan la invisibilización de 
 lenguas minoritarias. En dominios sensibles se exige anonimización, trazabilidad de origen y verificación de derechos.
@@ -65,7 +67,7 @@ Cuando el sistema llama herramientas externas, se sigue la tasa de éxito con re
 
 La vista end-to-end conecta todo con métricas de negocio como tiempo ahorrado, tasa de resolución de tickets, conversión y esfuerzo humano residual, además de desglosar la latencia por tramo y el costo por solicitud. Con esos datos se definen puertas de calidad previas a producción que combinan recuperación, formato, seguridad, calidad de tarea y SLOs de latencia y costo. Un ejemplo útil es exigir recall\@5 por encima del valor pactado, JSON válido por encima de 99.5 por ciento, cero fugas de PII en el set adversarial, p95 bajo el objetivo y costo promedio dentro del presupuesto. Si cualquier puerta falla no se promueve el cambio. Operativamente, todo esto se automatiza en CI para reejecutar la batería ante cualquier modificación de modelo, prompts, índices o parámetros, y en producción se usa shadow y canary con telemetría detallada, monitoreo de drift, refresco periódico de índice y embeddings, y bancos de pruebas "vivos" que crecen con casos reales e incidentes.
 
-### 9. Ingeniería de prompt
+### 9. Ingeniería de prompts
 
 El aprendizaje en contexto funciona cuando la instrucción es inequívoca, el objetivo está acotado y el contexto aporta evidencia pertinente. En zero-shot conviene declarar con claridad la tarea, las restricciones y el formato esperado. En few-shot se eligen ejemplos que cubran la variedad real de entradas y se explica por qué cada ejemplo es representativo. En tareas compuestas es útil separar en pasos y pedir verificación de cada etapa mediante herramientas externas o comprobaciones internas.
 
@@ -83,9 +85,9 @@ Los **agentes** van un paso más allá. No sólo recuperan y redactan. También 
 
 La **memoria** de agentes se divide en corto plazo, largo plazo y episódica. La de corto plazo mantiene el hilo del diálogo. La de largo plazo guarda preferencias u otros hechos persistentes del usuario. La episódica captura el historial de acciones y resultados en una tarea. Define reglas de retención y privacidad. Sin cuidado, una memoria demasiado amplia filtra datos o acumula contradicciones. Con buen diseño reduce fricción y repeticiones.
 
-### 11. Finetuning con criterio
+### 11. Fine-tuning con criterio
 
-El **finetuning** tiene sentido cuando el dominio es altamente específico, cuando hay políticas de estilo y seguridad que requieren alineación fina, o cuando hay tareas recurrentes con formato rígido. Si **RAG y prompting** logran la calidad objetivo, quizá no convenga entrenar. El coste no es sólo GPU y tiempo. También es deuda operativa por mantener versiones y rutas de degradación. Evalúa siempre la opción híbrida. Un FM base con RAG y validadores puede cubrir la mayoría de casos. El finetuning queda para cerrar brechas duraderas.
+El **fine-tuning** tiene sentido cuando el dominio es altamente específico, cuando hay políticas de estilo y seguridad que requieren alineación fina, o cuando hay tareas recurrentes con formato rígido. Si **RAG y prompting** logran la calidad objetivo, quizá no convenga entrenar. El coste no es sólo GPU y tiempo. También es deuda operativa por mantener versiones y rutas de degradación. Evalúa siempre la opción híbrida. Un FM base con RAG y validadores puede cubrir la mayoría de casos. El finetuning queda para cerrar brechas duraderas.
 
 En cuanto a **cuellos de botella de memoria**, el entrenamiento consume memoria para parámetros, gradientes y activaciones. Aquí entran técnicas como **gradiente acumulado**, **checkpointing de activaciones**, **mezcla de precisión** y **offloading** hacia CPU o discos rápidos cuando el hardware lo permite. En finetuning parcial, elige parámetros entrenables. Ajustar todas las capas raras veces es necesario. **Adapters** o **LoRA** y variantes permiten entrenar deltas compactas con buena transferencia. Define una **estrategia de freezing** de capas que preserve conocimiento general y acelere convergencia.
 
