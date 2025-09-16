@@ -120,9 +120,9 @@ help:
   pd.DataFrame(data, columns=["Texto", "Categoría"]).to_csv(args.out, index=False)
   ```
 
-#### **Lista de proyectos**
+### **Lista de proyectos**
 
-#### **Proyecto 1: N-gramas con Back-off y smoothing avanzado**
+### **Proyecto 1: N-gramas con Back-off y smoothing avanzado**
 - **Temas**: Modelos de lenguaje avanzados.
 - **Implementación**: Entrena unigrama, bigrama, y trigrama en 4,000 oraciones. Implementa **Katz back-off** y **Kneser-Ney smoothing**. Maneja `<UNK>` con umbral (frecuencia < 3). Compara tokenización por palabras vs subpalabras (BPE, vocab=2,000). Evalúa en 1,000 oraciones.
 - **Teoría**:
@@ -135,7 +135,7 @@ help:
   - Notebook y teoría. Commit: "N-gramas Katz y Kneser-Ney PC2".
   - Video: Demo de entrenamiento y comparación.
 
-#### **Proyecto 2: Clasificación con Transformers preentrenados**
+### **Proyecto 2: Clasificación con Transformers preentrenados**
 - **Temas**: Modelos preentrenados y fine-tuning.
 - **Implementación**: Tarea binaria (Positivo vs No Positivo) con un transformer ligero (ej.: `distilbert-base-multilingual-cased`). Fine-tune en 4,000 oraciones con validación cruzada (5 folds). Compara con BoW + logística L2. Traza curvas ROC y PR.
 - **Teoría**:
@@ -148,7 +148,7 @@ help:
   - Notebook y teoría. Commit: "Transformer clasificación PC2".
   - Video: Curvas ROC/PR y resultados.
 
-#### **Proyecto 3: Embeddings contextuales y anisotropía**
+### **Proyecto 3: Embeddings contextuales y anisotropía**
 - **Temas**: Representaciones contextuales.
 - **Implementación**: Compara embeddings estáticos (word2vec promedio) vs contextuales (`sentence-transformers`, modelo `paraphrase-multilingual-MiniLM-L12-v2`). Aplica **CSLS** para mitigar anisotropía. Recupera 10 consultas con **Recall@10** en 4,000 oraciones. Visualiza con t-SNE.
 - **Teoría**:
@@ -161,11 +161,11 @@ help:
   - Notebook y teoría. Commit: "Embeddings contextuales PC2".
   - Video: Visualización t-SNE y resultados.
 
-#### **Proyecto 4: LM Neuronal con Transformer**
+### **Proyecto 4: LM Neuronal con Transformer**
 - **Temas**: Modelos de lenguaje transformer.
 - **Implementación**: Implementa un transformer pequeño (2 capas, 4 cabeceras) con **weight tying** y **dropout** (0.2). Entrena en 4,000 oraciones (nivel palabra) y valida en 1,000. Compara con trigrama Kneser-Ney. Aplica **gradient clipping** (norma=1.0).
 - **Teoría**:
-  -  Beneficios del weight tying.
+  -  Beneficios del [weight tying](https://tomroth.dev/weight_tying/).
   -  Transformers vs RNN en modelado de lenguaje.
   -  Exploding gradients y clipping.
   -  Impacto de la profundidad del modelo.
@@ -189,7 +189,7 @@ help:
 
 #### **Proyecto 6: BPTT con longitud adaptativa**
 - **Temas**: Retropropagación a través del tiempo.
-- **Implementación**: Reusa el LM del Proyecto 4 (transformer). Compara **BPTT truncado** con longitudes 32, 64, 128, ajustando dinámicamente según la norma de gradiente (umbral=1.0). Traza curvas de pérdida y normas de gradiente. Evalúa en 1,000 oraciones.
+- **Implementación**: Reusa el LM del Proyecto 4 (Transformer). Compara **BPTT truncado** con longitudes 32, 64, 128, ajustando dinámicamente según la norma de gradiente (umbral=1.0). Traza curvas de pérdida y normas de gradiente. Evalúa en 1,000 oraciones.
 - **Teoría**:
   - BPTT truncado vs completo.
   - Impacto de la longitud de contexto.
