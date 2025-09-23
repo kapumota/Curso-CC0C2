@@ -1,0 +1,86 @@
+el servidor web responde con código doscientos
+el servidor web responde con código quinientos
+el cliente reintenta la solicitud después de un fallo
+el balanceador reparte tráfico entre instancias
+la latencia promedio baja tras optimizar cachés
+el registro muestra errores de tiempo de espera
+el dns resuelve el nombre de dominio correctamente
+un registro a apunta a la dirección ip del servidor
+el certificado tls expira el próximo mes
+la cadena de certificados presenta un intermediario ausente
+la supervisión detecta picos en el percentil p95
+la alerta se activa cuando el p99 supera el objetivo
+la aplicación lee la configuración desde variables de entorno
+las variables de entorno separan compilación y ejecución
+el despliegue canario recibe cinco por ciento del tráfico
+la versión anterior queda en modo sombra para comparar respuestas
+la política de reintentos aplica backoff exponencial
+la cola de mensajes desacopla productores y consumidores
+el circuito abierto evita cascadas de fallos
+el tablero muestra indicadores verdes amarillos y rojos
+el almacenamiento s3 guarda artefactos inmutables
+la red vpc aísla subredes públicas y privadas
+el grupo de seguridad permite solo puertos necesarios
+la imagen de contenedor se firma antes de publicar
+la tubería de ci cd valida pruebas y calidad
+las pruebas unitarias se ejecutan en cada commit
+las pruebas de integración verifican contratos http y dns
+los contratos incluyen tiempos de respuesta máximos
+el monitoreo envía métricas y logs a un agregador
+la trazabilidad agrega un identificador de correlación por petición
+el microservicio autentica con tokens de corta duración
+la rotación de claves se programa cada noventa días
+el registro de auditoría conserva eventos críticos
+la política de retención borra datos vencidos
+el escalado automático incrementa réplicas en horas pico
+el presupuesto de latencia se define por endpoint
+la caché local evita ir a la base de datos
+la base de datos replica en modo lectura
+el índice acelera consultas frecuentes
+la migración aplica cambios de esquema de manera segura
+el rollback revierte cambios si la validación falla
+el pipeline usa make para separar etapas
+make build compila módulos sin ejecutar
+make test corre baterías con reporte junit
+make lint aplica reglas de estilo y seguridad
+make package genera un artefacto reproducible
+make deploy publica en el entorno de ensayo
+el runbook documenta pasos en incidentes
+el postmortem identifica causas y acciones correctivas
+la observabilidad combina métricas logs y trazas
+la latencia percibida mejora con compresión http
+el gzip reduce tamaño de respuesta
+http dos mantiene conexiones persistentes
+http tres usa quic sobre udp
+el dns sobre https protege consultas
+la política cors limita orígenes confiables
+el content security policy bloquea cargas no autorizadas
+el escaneo de dependencias detecta vulnerabilidades
+la actualización corrige versiones con fallos graves
+la ofuscación no sustituye controles de acceso
+la anonimización protege datos personales
+la encriptación en reposo usa claves gestionadas
+el salto de versión exige pruebas regresivas
+la distribución azul verde minimiza tiempo de inactividad
+los experimentos a b comparan variantes de interfaz
+la telemetría respeta la política de privacidad
+el scraping malicioso es bloqueado por rate limiting
+la cuota por usuario evita abusos de api
+el guardián de salud revisa cada minuto
+el servicio responde listo cuando supera check de arranque
+los timeouts se ajustan a la latencia esperada
+los contenedores comparten el kernel del sistema
+kubernetes reprograma pods en nodos sanos
+un daemonset ejecuta un pod por nodo
+un cronjob agenda tareas periódicas
+un configmap inyecta parámetros no sensibles
+un secret almacena credenciales cifradas
+un ingress enruta peticiones http a servicios internos
+un service discovery resuelve nombres internos
+prometheus recolecta métricas vía pull
+grafana visualiza tableros de desempeño
+el alertmanager coordina notificaciones
+el runbook incluye umbrales por severidad
+los incidentes se etiquetan con prioridad
+las revisiones semanales evalúan deuda técnica
+la cultura you build it you run it asigna propiedad
