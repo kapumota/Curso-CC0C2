@@ -525,14 +525,14 @@ make deps && make build && make data && make verify-corpus && make train && make
 | TOPK/TOPP/TEMP/BEAM/LENGTH_PENALTY/QUANT_BITS | Decodificación/cuantización. | Tradeoffs diversidad/calidad/latencia |
 
 Ver `docs/autoría.md` y `docs/cobertura.md`.
-```
 
-## 5) `docs/reporte.md`
+
+#### 5) `docs/reporte.md`
 
 Con σ/IC y ablaciones.
 
 ```markdown
-# Reporte Final
+# Reporte final
 
 ## Introducción
 Mini-Transformer (decoder-only) con RoPE; módulo complementario: [indicar]. Ablación: RoPE vs sinusoidal.
