@@ -504,7 +504,7 @@ Tabla variable->efecto y dependencias claras.
 # Proyecto CC0c2: Mini-Transformer + módulo complementario
 
 ## Dependencias
-- Permitido: Python stdlib, numpy, torch (si preinstalado). **Prohibido** instalar en CI/ejecución.
+- Permitido: Python stdlib, numpy, torch (si preinstalado).
 - Fallback: Usar NumPy para atención/MLP si torch no está disponible; justificar en `docs/reporte.md`.
 
 ## Uso rápido
@@ -520,7 +520,7 @@ make deps && make build && make data && make verify-corpus && make train && make
 | SALT          | ≥16 hex               | Unicidad del corpus (hash)                 |
 | CONTEXT       | Longitud de contexto  | ↑memoria/latencia; +secuencias largas      |
 | LR            | Learning rate         | Alto=rápido/inestable; bajo=lento/estable  |
-| HEADS         | nº de heads           | +capacidad y costo O(n²)                   |
+| HEADS         | numero de heads           | +capacidad y costo O(n²)                   |
 | DIM           | dimensión             | +capacidad, +costo                         |
 | TOPK/TOPP/TEMP/BEAM/LENGTH_PENALTY/QUANT_BITS | Decodificación/cuantización. | Tradeoffs diversidad/calidad/latencia |
 
