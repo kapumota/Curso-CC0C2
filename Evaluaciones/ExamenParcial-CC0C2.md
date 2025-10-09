@@ -212,7 +212,7 @@ Makefile       # deps, build, data, tokenize, train, test, eval, bench, plot, pa
 
 **Alcance mínimo**
 
-* Reutilizar el modelo del Mini-Transformer o un lenguaje muy simple.
+* Usar el Mini-Transformer ya entrenado y probarlo sobre un corpus sencillo y controlado.
 * Ejecutar cada estrategia con al menos dos configuraciones de parámetros.
 
 **Métricas**
