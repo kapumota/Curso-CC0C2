@@ -5,8 +5,8 @@
 **Dependencias permitidas:** Python stdlib, `numpy`, y `torch` **solo si ya están preinstaladas** en el entorno. 
 
 **Alcance reducido (obligatorio):**  
-* **Módulo 3** (Mini-Transformer) **obligatorio**.  
-* **Un** módulo complementario a elegir entre **1, 2, 5 o 6**.  
+* **Proyecto 3** (Mini-Transformer) **obligatorio**.  
+* **Un** proyecto complementario a elegir entre **1, 2, 5 o 6**.  
 * **Una** ablación mínima (por ejemplo, **RoPE vs sinusoidal** o **top-p vs beam**).  
 
 
