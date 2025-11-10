@@ -1,4 +1,5 @@
-# Makefile — objetivos básicos para uso con Docker
+# Makefile - objetivos básicos para uso con Docker
+
 IMAGE?=p3_mininmt_beamsearch:latest
 CONTAINER?=p3_mininmt_beamsearch_ctr
 PORT?=8888
