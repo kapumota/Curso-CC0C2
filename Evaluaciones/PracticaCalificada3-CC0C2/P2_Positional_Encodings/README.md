@@ -1,30 +1,29 @@
-# Proyecto 2 — El tiempo en el espacio: Positional Encodings
-**Tema:** Sinusoidal, learned, RoPE, ALiBi; extrapolación a largo contexto.
+### Proyecto 2 - El tiempo en el espacio: Positional Encodings
 
-## Objetivo
+**Tema:** Sinusoidal, learned, RoPE, ALiBi, extrapolación a largo contexto.
+
+#### Objetivo
 Comparar cuatro codificaciones posicionales entrenando a 256 tokens y evaluando a 512/1024.
 
-## Dataset
+#### Dataset
 Tarea sintética (copiar/duplicar secuencias) + IMDb (longitud variable).
 
-## Entregables
+#### Entregables
 - Notebook con las 4 variantes.
-- Gráficas rendimiento vs longitud; estabilidad numérica (gradientes/pérdida).
+- Gráficas rendimiento vs longitud,  estabilidad numérica (gradientes/pérdida).
 
-## Métricas
+#### Métricas
 Accuracy (tarea sintética), F1/accuracy (IMDb), pérdida por longitud.
 
-## Pasos
+#### Pasos
 1) Inyectar cada PE en el mismo modelo  
-2) Entrenar corto a 256 tokens; probar a 512/1k  
+2) Entrenar corto a 256 tokens, probar a 512/1k  
 3) Analizar degradación y justificación técnica
 
-## Video
+#### Video
 Demostración de fallo/éxito por longitud y conclusiones.
 
----
-
-## Ejecutar con Docker
+### Ejecutar con Docker
 
 > Requisitos: Docker Desktop o Docker Engine reciente.
 
@@ -49,7 +48,7 @@ Demostración de fallo/éxito por longitud y conclusiones.
    make stop
    ```
 
-### Notas
+#### Notas
 - Los notebooks y resultados se guardan en tu carpeta local gracias al volumen `-v $PWD:/workspace`.
 - Si necesitas GPU, puedes construir desde una imagen CUDA oficial y ejecutar con `--gpus all` (ver ejemplo abajo).
 
