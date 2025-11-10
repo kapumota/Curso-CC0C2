@@ -1,4 +1,4 @@
-# Makefile — objetivos básicos para uso con Docker
+# Makefile - objetivos básicos para uso con Docker
 IMAGE?=p4_bert_vs_lora_vs_adapters:latest
 CONTAINER?=p4_bert_vs_lora_vs_adapters_ctr
 PORT?=8888
