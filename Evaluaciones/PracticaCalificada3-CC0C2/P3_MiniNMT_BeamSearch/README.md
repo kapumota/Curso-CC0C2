@@ -1,30 +1,28 @@
-# Proyecto 3 — Mini-NMT: Encoder-Decoder y Beam Search
-**Tema:** NMT con encoder-decoder; decodificación.
+### Proyecto 3 - Mini-NMT: Encoder-Decoder y Beam Search
+**Tema:** NMT con encoder-decoder, decodificación.
 
-## Objetivo
-Fine-tuning pequeño y comparación greedy vs beam (k=1/4/8) con y sin length penalty.
+#### Objetivo
+Fine-tuning pequeño y comparación greedy vs beam (k=1/4/8) con y sin **length penalty**.
 
-## Dataset
-Tatoeba o subset WMT EN↔ES (limpieza mínima).
+#### Dataset
+Tatoeba o subset WMT EN<->ES (limpieza mínima).
 
-## Entregables
+#### Entregables
 - Notebook: fine-tuning, inferencia, evaluación.
 - Tabla BLEU/chrF y muestras cualitativas.
 
-## Métricas
-BLEU, chrF; tiempo por oración.
+#### Métricas
+BLEU, chrF, tiempo por oración.
 
-## Pasos
+#### Pasos
 1) Limpieza/normalización básica  
-2) Fine-tune (2–3 épocas)  
+2) Fine-tune (2-3 épocas)  
 3) Decodificar y comparar búsquedas
 
-## Video
+#### Video
 Demo traducción + toggles de beam/penalty.
 
----
-
-## Ejecutar con Docker
+### Ejecutar con Docker
 
 > Requisitos: Docker Desktop o Docker Engine reciente.
 
@@ -49,7 +47,7 @@ Demo traducción + toggles de beam/penalty.
    make stop
    ```
 
-### Notas
+#### Notas
 - Los notebooks y resultados se guardan en tu carpeta local gracias al volumen `-v $PWD:/workspace`.
 - Si necesitas GPU, puedes construir desde una imagen CUDA oficial y ejecutar con `--gpus all` (ver ejemplo abajo).
 
