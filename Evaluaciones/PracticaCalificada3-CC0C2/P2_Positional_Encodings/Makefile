@@ -1,4 +1,4 @@
-# Makefile — objetivos básicos para uso con Docker
+# Makefile - objetivos básicos para uso con Docker
 IMAGE?=p2_positional_encodings:latest
 CONTAINER?=p2_positional_encodings_ctr
 PORT?=8888
