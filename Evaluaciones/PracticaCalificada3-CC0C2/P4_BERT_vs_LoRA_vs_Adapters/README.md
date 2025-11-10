@@ -1,30 +1,29 @@
-# Proyecto 4 — BERT: Fine-tuning vs LoRA vs Adapters
+### Proyecto 4 - BERT: Fine-tuning vs LoRA vs Adapters
 **Tema:** PEFT y eficiencia.
 
-## Objetivo
-Comparar full FT vs LoRA/QLoRA vs Adapters en sentiment/topic.
+#### Objetivo
+Comparar full FT vs LoRA/QLoRA vs Adapters en análisis de sentimentos/tópicos.
 
-## Dataset
+#### Dataset
 SST-2 o AG News.
 
-## Entregables
+#### Entregables
 - Notebook con 3 corridas y tabla de parámetros entrenables.
-- Curvas de entrenamiento; F1 macro; memoria pico/tiempo.
+- Curvas de entrenamiento, F1 macro y  memoria pico/tiempo.
 
-## Métricas
+#### Métricas
 F1 macro, #parámetros entrenables, tiempo/época.
 
-## Pasos
+#### Pasos
 1) Splits y seed fija  
 2) Implementar LoRA y Adapters  
 3) Evaluar eficiencia y calidad
 
-## Video
+#### Video
 Tabla comparativa y takeaways de producción.
 
----
 
-## Ejecutar con Docker
+### Ejecutar con Docker
 
 > Requisitos: Docker Desktop o Docker Engine reciente.
 
@@ -49,7 +48,7 @@ Tabla comparativa y takeaways de producción.
    make stop
    ```
 
-### Notas
+#### Notas
 - Los notebooks y resultados se guardan en tu carpeta local gracias al volumen `-v $PWD:/workspace`.
 - Si necesitas GPU, puedes construir desde una imagen CUDA oficial y ejecutar con `--gpus all` (ver ejemplo abajo).
 
