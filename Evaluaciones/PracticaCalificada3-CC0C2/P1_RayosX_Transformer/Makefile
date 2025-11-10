@@ -1,4 +1,4 @@
-# Makefile — objetivos básicos para uso con Docker
+# Makefile - objetivos básicos para uso con Docker
 IMAGE?=p1_rayosx_transformer:latest
 CONTAINER?=p1_rayosx_transformer_ctr
 PORT?=8888
