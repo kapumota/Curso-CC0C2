@@ -2,7 +2,7 @@
 
 #### Instrucciones generales
 
-- **Plazo**: 6 días  
+- **Plazo**: 6 días. Entrega el 22 de noviembre, en hora de clases.
 - **Tiempo estimado**: ~6 h (3 h implementación, 1.5 h teoría, 1 h video, 0.5 h exposición)  
 - **Formato**: Trabajo individual  
 - **Tecnologías obligatorias**: Python (PyTorch), Docker, Makefile, Jupyter Notebooks, pytest, torch.profiler  
