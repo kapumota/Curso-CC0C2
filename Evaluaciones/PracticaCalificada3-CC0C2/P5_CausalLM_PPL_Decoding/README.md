@@ -56,7 +56,7 @@ Se explorará:
 
 #### Pasos (desglosados con detalle)
 1. **Calcular CE/PPL en validación**  
-   - Usa `model.eval()` + `torch.no_grad()`.  
+   - Usa `modelo.eval()` + `torch.no_grad()`.  
    - Ignora padding y tokens de control.  
    - PPL final < 25 es excelente para modelo pequeño.
 
