@@ -1,4 +1,4 @@
-### Proyecto 2 - El tiempo en el espacio: Positional Encodings
+### Proyecto 2 -El tiempo en el espacio: Positional Encodings
 
 **Tema:** Sinusoidal, learned, RoPE, ALiBi, extrapolación a largo contexto.
 
