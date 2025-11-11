@@ -1,4 +1,4 @@
-# Makefile — objetivos básicos para uso con Docker
+# Makefile - objetivos básicos para uso con Docker
 IMAGE?=p5_causallm_ppl_and_decoding:latest
 CONTAINER?=p5_causallm_ppl_and_decoding_ctr
 PORT?=8888
