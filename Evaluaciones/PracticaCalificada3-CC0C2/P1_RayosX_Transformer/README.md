@@ -153,3 +153,84 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 ```
 </details>
 
+### Perfilador de apoyo
+
+```python
+# src/profiling.py
+import time, torch, math
+import torch.nn as nn
+from contextlib import nullcontext
+
+def count_params(m): return sum(p.numel() for p in m.parameters())
+
+@torch.no_grad()
+def benchmark(modelo, seq_len=256, batch_size=16, steps=50, use_amp=True, device=None):
+    device = device or ("cuda" if torch.cuda.is_available() else "cpu")
+    modelo = modelo.to(device).eval()
+    vocab_size = getattr(modelo, "vocab_size", 30522)  # ajusta si usas otro tokenizer
+    ids = torch.randint(0, vocab_size, (batch_size, seq_len), device=device)
+    attn = torch.ones_like(ids)
+
+    scaler_ctx = torch.cuda.amp.autocast if (use_amp and device=="cuda") else nullcontext
+    torch.cuda.reset_peak_memory_stats(device) if device=="cuda" else None
+
+    # warmup
+    for _ in range(5):
+        with scaler_ctx():
+            _ = modelo(ids, attention_mask=attn)
+
+    t0 = time.perf_counter()
+    for _ in range(steps):
+        with scaler_ctx():
+            _ = modelo(ids, attention_mask=attn)
+    t1 = time.perf_counter()
+
+    elapsed = t1 - t0
+    tokens = steps * batch_size * seq_len
+    tps = tokens / elapsed
+    mem = torch.cuda.max_memory_reserved(device)/1e9 if device=="cuda" else None
+
+    return {
+        "device": device,
+        "params_m": round(count_params(modelo)/1e6, 3),
+        "seq_len": seq_len,
+        "batch_size": batch_size,
+        "steps": steps,
+        "elapsed_s": round(elapsed, 3),
+        "tokens": tokens,
+        "tokens_per_s": round(tps, 1),
+        "peak_mem_gb": round(mem, 3) if mem is not None else None,
+        "amp": bool(use_amp),
+    }
+```
+
+#### Cómo usarlo dentro del notebook
+
+```python
+from src.profiling import benchmark
+# asumiendo que tu clase se llama TinyEncoderClassifier y que fijaste vocab_size
+modelo.vocab_size = tok.vocab_size  # para el perfilador
+res = benchmark(modelo, seq_len=256, batch_size=16, steps=100, use_amp=True)
+res
+```
+
+#### Target Makefile rápido (opcional)
+
+Añade esto al `Makefile` del P1 para ejecutar el perfil en la imagen Docker:
+
+```make
+profile:
+\tdocker run --rm -it -v $$(pwd):/workspace --entrypoint python $(IMAGE) - <<'PY'
+from src.profiling import benchmark
+# IMPORTA tu modelo desde src o notebook exportado
+from notebooks.utils_export import modelo  # ajusta si lo tienes en otro lugar
+print(benchmark(modelo, seq_len=256, batch_size=16, steps=100, use_amp=True))
+PY
+```
+
+#### Tips de interpretación
+
+* **tokens_per_s**: si baja mucho al subir `seq_len`, recorta `max_length` (la atención es O(L^2)).
+* **peak_mem_gb (GPU)**: si > VRAM, baja `batch_size` o `seq_len`.
+* **amp=True** (mixed precision) suele mejorar velocidad y bajar memoria en GPU.
+
