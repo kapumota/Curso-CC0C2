@@ -81,11 +81,7 @@ Se pide demostrar de manera  **cuantitativa y cualitativamente** cómo el **beam
 1. **Introducción**: "Hoy construimos un traductor EN->ES desde cero y vemos por qué el beam search de ChatGPT no es magia... es solo búsqueda inteligente."  
 2. **Demostración en vivo**:  
    - Escribe 5 oraciones en inglés (una fácil, una ambigua, una larga, una con modismo, una técnica).  
-   - Muestra en tiempo real cómo cambia la traducción al activar/desactivar beam y la penalidad.  
-   - Ejemplo típico:  
-     - Greedy: "I like to eat apples." -> "Me gusta comer manzanas."  
-     - Beam8 α=0: "Me gusta comer." (corta)  
-     - Beam8 α=0.6: "Me gusta comer manzanas." (perfecta)  
+   - Muestra en tiempo real cómo cambia la traducción al activar/desactivar beam y la penalidad.
 3. **Resultados**: tabla BLEU, gráfica de longitud, tiempo.  
 4. **Conclusiones**:  
    - "Beam > greedy siempre, pero sin length penalty traduce demasiado corto."  
