@@ -1,30 +1,29 @@
-# Proyecto 5 — Lenguajes causales: PPL y Decodificación
+### Proyecto 5 - Lenguajes causales: PPL y decodificación
+
 **Tema:** PPL/cross-entropy y calidad generativa.
 
-## Objetivo
+#### Objetivo
 Analizar relación entre PPL y calidad bajo greedy/beam/top-k/top-p/temperatura.
 
-## Dataset
+#### Dataset
 WikiText-2 (subset) o corpus pequeño.
 
-## Entregables
+### Entregables
 - Notebook con evaluación PPL y grilla de generación.
 - Muestras con conteo de repetición y diversidad.
 
-## Métricas
+#### Métricas
 PPL, longitud media, repetición, type/token.
 
-## Pasos
+#### Pasos
 1) Calcular CE/PPL en validación  
 2) Experimentos de decodificación  
 3) Analizar correlación PPL vs calidad
 
-## Video
+#### Video
 Controles en vivo y lectura de muestras.
 
----
-
-## Ejecutar con Docker
+### Ejecutar con Docker
 
 > Requisitos: Docker Desktop o Docker Engine reciente.
 
@@ -49,7 +48,8 @@ Controles en vivo y lectura de muestras.
    make stop
    ```
 
-### Notas
+#### Notas
+
 - Los notebooks y resultados se guardan en tu carpeta local gracias al volumen `-v $PWD:/workspace`.
 - Si necesitas GPU, puedes construir desde una imagen CUDA oficial y ejecutar con `--gpus all` (ver ejemplo abajo).
 
