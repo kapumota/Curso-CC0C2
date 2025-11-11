@@ -1,4 +1,4 @@
-# Makefile — objetivos básicos para uso con Docker
+# Makefile - objetivos básicos para uso con Docker
 IMAGE?=p6_inference_kvcache_quantization:latest
 CONTAINER?=p6_inference_kvcache_quantization_ctr
 PORT?=8888
