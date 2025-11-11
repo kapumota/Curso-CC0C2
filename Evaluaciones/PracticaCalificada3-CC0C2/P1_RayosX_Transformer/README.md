@@ -32,8 +32,8 @@ Ambos datasets están disponibles directamente en `torchtext` o `datasets` (Hugg
     "best_epoch": X
   }
   ```
-- **Video de ~5 minutos** (grabación de pantalla + voz o texto):
-  - Introducción rápida al proyecto (30 s).
+- **Video** (grabación de pantalla + voz o texto):
+  - Introducción rápida al proyecto.
   - Demo en vivo de los mapas de atención (explicar qué está mirando el modelo).
   - Mostrar curvas de entrenamiento y métricas finales.
   - Cierre con 3-4 lecciones aprendidas (ejemplo: "la máscara causal es clave para tareas generativas", "el padding mask evita que el modelo preste atención a tokens vacíos", etc.).
@@ -73,10 +73,10 @@ Ambos datasets están disponibles directamente en `torchtext` o `datasets` (Hugg
 
 #### Video
 **Guion recomendado**:  
-1. **Sprint intro**: "Este proyecto es un ‘rayos X’ del Transformer: vamos a construir un bloque desde cero y ver exactamente qué pasa dentro de la atención."  
-2. **Demo atención**:  
+1. **Sprint intro**: "Este proyecto es un 'rayos X' del Transformer: vamos a construir un bloque desde cero y ver exactamente qué pasa dentro de la atención."  
+2. **Demostración de atención**:  
    - Muestra 3 ejemplos reales.  
-   - Explica: "Aquí el modelo pone mucho peso en la palabra ‘horrible’ cuando predice negativo."  
+   - Explica: "Aquí el modelo pone mucho peso en la palabra 'horrible' cuando predice negativo."  
    - Compara con y sin máscara causal (si la implementaste).  
 3. **Métricas**: muestra las curvas y el JSON final.  
 4. **Cierre**: 3 lecciones clave + "¡Listo para el siguiente proyecto!".
