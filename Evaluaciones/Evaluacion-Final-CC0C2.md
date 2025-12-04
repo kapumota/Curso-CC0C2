@@ -111,7 +111,7 @@ Simular un escenario de **preentrenamiento continuo** sobre un dominio local (po
 * Definir dos dominios:
 
   * **Dominio A:** por ejemplo, noticias breves o textos generales.
-  * **Dominio B:** por ejemplo, documentos de la universidad / facultad / reglamentos.
+  * **Dominio B:** por ejemplo, documentos de la universidad /facultad / reglamentos.
 * Realizar dos fases:
 
   * **Fase A:** fine-tuning/preentrenamiento adicional en A.
@@ -280,8 +280,8 @@ Construir un sistema de **RAG básico** bien diseñado: pipeline completo de **i
 
 * Experimentos:
 
-  * Comparar al menos **dos estrategias de chunking** (ej. 256 vs 512 tokens, con y sin solapamiento).
-  * Comparar al menos **dos valores de k** (ej. k=3 vs k=10).
+  * Comparar al menos **dos estrategias de chunking** (por ejemplo, 256 vs 512 tokens, con y sin solapamiento).
+  * Comparar al menos **dos valores de k** (por ejemplo, k=3 vs k=10).
   * Evaluar 2-3 métricas (recall@k, MRR, EM/F1, u otra; se puede usar LLM-as-a-judge si se justifica).
 * Buenas prácticas:
 
@@ -491,7 +491,7 @@ Entregar el proyecto **consolidado y profundo**, demostrando comprensión de las
 Evaluar la **capacidad del estudiante para explicar y defender** su proyecto, conectando la implementación con los conceptos del curso.
 
 * La exposición se realiza el **20 de diciembre** (mismo día que E2).
-* Duración orientativa: **15–30 minutos** de presentación + preguntas.
+* Duración orientativa: **15-30 minutos** de presentación + preguntas.
 * Se puede usar diapositivas, demostración en vivo u otro medio, siempre que se vea:
 
   * Cómo está construido el sistema.
