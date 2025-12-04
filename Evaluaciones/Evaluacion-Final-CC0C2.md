@@ -345,7 +345,7 @@ Extender RAG 101 a un **RAG avanzado** con **retrieval híbrido** (sparse + dens
 ### R7 - *"Agentic Tools"*: workflows, agentes y guardrails con observabilidad
 
 **Idea:**
-Diseñar un **workflow de LLM** con un agente que pueda usar varias herramientas (RAG, calculadora, API local, etc.) siguiendo paradigmas **pasivo / explícito / autónomo**, con **guardrails y observabilidad básica**.
+Diseñar un **workflow de LLM** con un agente que pueda usar varias herramientas (RAG, API local, etc.) siguiendo paradigmas **pasivo / explícito / autónomo**, con **guardrails y observabilidad básica**.
 
 #### Alcance mínimo
 
