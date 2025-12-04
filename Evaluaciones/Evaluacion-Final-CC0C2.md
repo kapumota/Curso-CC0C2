@@ -17,6 +17,22 @@
 
 > E1 y E2 forman parte del examen final, junto con la exposición oral del 20 de diciembre. La forma exacta de cálculo de la nota está detallada al final de este documento.
 
+#### Aviso importante: relación entre E1 y E2**
+
+- El **Entregable 1 (E1)** corresponde a la versión inicial del proyecto: entorno listo, *baseline* funcionando y primeros experimentos.
+- El **Entregable 2 (E2)** **no es un proyecto nuevo**, sino la **continuación directa** de E1 sobre el **mismo tema y el mismo repositorio**.
+- En E2 se espera que:
+  - Mejores y profundices lo que ya entregaste en E1 (más experimentos, más análisis, técnicas avanzadas del curso).
+  - No cambies de tema ni "reinicies" el proyecto desde cero.
+  - La calidad de E2 se evalúa asumiendo que partiste de un E1 razonablemente completo; un E1 débil o inexistente limita lo que puedes lograr en E2.
+
+**Organización de los entregables:**
+- E1 y E2 deben estar **claramente separados**:
+  - Si trabajas en un solo repositorio, organiza el contenido en carpetas separadas (por ejemplo, `E1/` y `E2/`) o etiquetas claras en el `README`.
+  - Si la plataforma de entrega lo requiere, súbelos también como **entregas separadas** (archivo/video E1 por un lado, archivo/video E2 por otro).
+  - Puedes (y se recomienda) usar **Projects/tableros de GitHub** para gestionar tareas y evidenciar el progreso entre E1 y E2.
+- La calidad de E2 se evalúa asumiendo que partiste de un E1 razonablemente completo; un E1 débil o inexistente limita lo que puedes lograr en E2.
+
 ### 1. Herramientas y modelos recomendados
 
 **Todo debe funcionar en CPU**, usando la laptop/PC personal del estudiante.
