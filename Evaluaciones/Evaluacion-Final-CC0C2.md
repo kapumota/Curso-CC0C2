@@ -17,7 +17,7 @@
 
 > E1 y E2 forman parte del examen final, junto con la exposición oral del 20 de diciembre. La forma exacta de cálculo de la nota está detallada al final de este documento.
 
-#### Aviso importante: relación entre E1 y E2**
+#### Aviso importante: relación entre E1 y E2
 
 - El **Entregable 1 (E1)** corresponde a la versión inicial del proyecto: entorno listo, *baseline* funcionando y primeros experimentos.
 - El **Entregable 2 (E2)** **no es un proyecto nuevo**, sino la **continuación directa** de E1 sobre el **mismo tema y el mismo repositorio**.
