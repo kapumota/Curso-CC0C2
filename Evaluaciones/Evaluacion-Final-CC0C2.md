@@ -12,7 +12,7 @@
 * **Entrega 2 (E2, final):** **20 de diciembre**
 
   * Código final + experimentos adicionales.
-  * Informe extendido/versión final (6-10 páginas).
+  * Informe extendido/versión final (10-12 páginas) en PDF.
   * Video de ejecución + **exposición oral/defensa del proyecto**.
 
 > E1 y E2 forman parte del examen final, junto con la exposición oral del 20 de diciembre. La forma exacta de cálculo de la nota está detallada al final de este documento.
@@ -496,8 +496,8 @@ Entregar el proyecto **consolidado y profundo**, demostrando comprensión de las
 | **E2-A** | Continuidad y calidad del entorno (reproducible, mejora sobre E1)          | 3           |
 | **E2-B** | Núcleo técnico avanzado (técnicas del curso bien integradas y funcionando) |  6          |
 | **E2-C** | Experimentos y análisis (comparaciones, ablations, métricas bien usadas)   | 5          |
-| **E2-D** | Informe final (6-10 páginas, claridad y conexión con teoría)               | 3           |
-| **E2-E** | Video de ejecución (demo final, 5-8 min)                                   | 3          |
+| **E2-D** | Informe final (10-12 páginas, claridad y conexión con teoría)               | 3           |
+| **E2-E** | Video (demo final, 15 min a más )                                   | 3          |
 |          | **TOTAL E2**                                                               | **20**      |
 
 
@@ -519,8 +519,8 @@ Evaluar la **capacidad del estudiante para explicar y defender** su proyecto, co
 | Código   | Criterio                                                                                     | Puntos máx. |
 | -------- | -------------------------------------------------------------------------------------------- | ----------- |
 | **EO-A** | Claridad y estructura de la presentación (inicio, desarrollo, cierre)                        | 2           |
-| **EO-B** | Explicación técnica del sistema (arquitectura, decisiones de diseño, relación con el código) | 5          |
-| **EO-C** | Análisis de experimentos y resultados (qué se midió, qué se aprendió)                        | 4           |
+| **EO-B** | Explicación técnica del sistema (arquitectura, decisiones de diseño, relación con el código)-Preguntas | 5          |
+| **EO-C** | Análisis de experimentos y resultados (qué se midió, qué se aprendió) -Preguntas                       | 4           |
 | **EO-D** | Demostración en vivo y manejo del tiempo                                                     | 2           |
 | **EO-E** | Respuestas a preguntas y dominio conceptual (fine-tuning, RAG, alignment, agentes, etc.)     | 7           |
 |          | **TOTAL Exposición oral**                                                                    | **20**      |
