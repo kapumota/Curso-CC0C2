@@ -8,12 +8,12 @@
 
   * Código funcional (versión *baseline + α*).
   * Informe corto (2-3 páginas).
-  * **Video corto de ejecución (5-8 min, sin exposición formal).**
+  * **Video corto  (5-8 min, sin exposición formal).**
 * **Entrega 2 (E2, final):** **20 de diciembre**
 
   * Código final + experimentos adicionales.
   * Informe extendido/versión final (10-12 páginas) en PDF.
-  * Video de ejecución + **exposición oral/defensa del proyecto**.
+  * Video + **exposición oral/defensa del proyecto**.
 
 > E1 y E2 forman parte del examen final, junto con la exposición oral del 20 de diciembre. La forma exacta de cálculo de la nota está detallada al final de este documento.
 
@@ -452,7 +452,7 @@ Construir un sistema **multi-agente** para QA empresarial o académico usando **
 
   * Relación con workflows multi-agente (manager + workers).
   * Posibles casos de uso reales (QA empresarial, generación de código + agente "tester").
-* Video final: explicación de resultados y demo del sistema completo.
+* Video: explicación de resultados y demo del sistema completo.
 
 ### 3. Entregables y rúbricas
 
@@ -465,7 +465,7 @@ Tener el proyecto "en pie": entorno, baseline funcionando, primeros experimentos
 
 * Código + trabajo en progreso (baseline bien armado).
 * Primeros experimentos y métricas básicas.
-* **Video de ejecución (sin exposición oral formal)**.
+* **Video  (sin exposición oral formal)**.
 
 #### Rúbrica E1
 
@@ -475,7 +475,7 @@ Tener el proyecto "en pie": entorno, baseline funcionando, primeros experimentos
 | **E1-B** | Núcleo técnico / baseline funcionando (entrena/ejecuta sin romperse)       | 5           |
 | **E1-C** | Datos + primeros experimentos / métricas básicas                           | 4           |
 | **E1-D** | Informe corto (2-3 páginas): objetivo, método, resultados preliminares     | 3           |
-| **E1-E** | Video de ejecución (5-8 min, demo técnica, sin exposición formal)          | 4           |
+| **E1-E** | Video  (5-8 min, demo técnica, sin exposición formal)          | 4           |
 |          | **TOTAL E1**                                                               | **20**      |
 
 #### 3.2. Entregable 2 (E2) - 20 de diciembre
@@ -487,7 +487,7 @@ Entregar el proyecto **consolidado y profundo**, demostrando comprensión de las
 
 * Continuación directa y mejora del E1 (no es un proyecto nuevo).
 * Experimentos más profundos, comparaciones de técnicas.
-* **Video de ejecución** + **exposición oral / defensa del proyecto**.
+* **Video** + **exposición oral / defensa del proyecto**.
 
 #### Rúbrica E2
 
